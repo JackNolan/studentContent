@@ -1,6 +1,8 @@
-#config.ru
+require 'rubygems'
+require 'bundler'
 
-require './main'
-run Sinatra::Application
+Bundler.require
 
-$stdout.sync = true
+require './main.rb'
+
+StudentApp.run!

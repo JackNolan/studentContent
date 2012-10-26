@@ -1,9 +1,7 @@
-require 'sinatra'
-require 'sqlite3'
 
 require_relative 'studentclass'
 
-class StudentApp
+class StudentApp < Sinatra::Base
 
   get '/' do
     @student_info = Student.new.get_all
