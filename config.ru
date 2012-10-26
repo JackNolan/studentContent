@@ -1,3 +1,8 @@
-#config.ru
-require './studentbody'
-run StudentBody.new
+require 'rubygems'
+require 'bundler'
+
+Bundler.require
+
+require './main.rb'
+
+StudentBody.run!

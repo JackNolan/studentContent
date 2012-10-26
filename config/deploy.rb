@@ -1,5 +1,5 @@
 set :application, "studentbody"
-set :repository,  "git@github.com:JackNolan/studentContent.git"
+set :repository,  "https://github.com/JackNolan/studentContent.git"
 
 set :user, 'jacknolan'
 set :deploy_to, "/home/#{ user }/#{ application }"
