@@ -1,4 +1,6 @@
+#config.ru
 
-require './main.rb'
+require './main'
+run Sinatra::Application
 
-StudentBody.run!
+$stdout.sync = true
